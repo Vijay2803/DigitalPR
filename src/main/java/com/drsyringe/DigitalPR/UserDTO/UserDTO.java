@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 
 // all the user data will pass through DTO onl
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserDTO {

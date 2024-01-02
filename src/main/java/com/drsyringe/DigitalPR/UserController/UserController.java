@@ -6,9 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController // to connect with restfull-api
-@CrossOrigin // to connect with third party webs
 @RequestMapping("/user") // to handle JSON request from DTO
-
 public class UserController {
     @Autowired
     private UserService userService;
@@ -20,7 +18,9 @@ public class UserController {
 
     @PostMapping(path = "/save") //from post request in API on method save
     public String saveUser(@RequestBody UserDTO userDTO){
-        String id = userService.saveUser(userDTO.toUser()); // we pass this request to User Service Which comes from User Dto
-        return id;
+    	System.out.println(userDTO.toString());
+    return "Hi";
+//        String id = userService.saveUser(userDTO.toUser()); // we pass this request to User Service Which comes from User Dto
+//        return id;
     }
 }

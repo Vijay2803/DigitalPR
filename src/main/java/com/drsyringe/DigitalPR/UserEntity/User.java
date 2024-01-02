@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name="user") // to create a table user in mysql table
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
