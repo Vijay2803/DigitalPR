@@ -17,9 +17,9 @@ public class User {
     @Column(name = "user_name", length = 50)
     private String userName;
     @Column(name = "user_mobile", length = 12)
-    private int userMobile;
+    private String userMobile;
 
-    public User(String userName, int userMobile) {
+    public User(String userName, String userMobile) {
         this.userName = userName;
         this.userMobile = userMobile;
     }

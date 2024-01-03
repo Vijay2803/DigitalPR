@@ -14,13 +14,14 @@ import lombok.NoArgsConstructor;
 public class UserDTO {
 
     private String userName;
-    private int userMobile;
+    private String userMobile;
+
+
 
     //create a parameter constructor
 
     public User toUser(){
         return new User(
-
                 this.userName,
                 this.userMobile
         );
